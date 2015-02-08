@@ -53,3 +53,12 @@ a {
 
   span { color: $blue; }
 }
+
+
+span.underline {
+  text-decoration: underline;
+}
+
+span.border {
+  border-bottom: 2px solid #ccc;
+}
