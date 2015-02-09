@@ -1,7 +1,13 @@
 /* ==========================================================================
    Site styles
    ========================================================================== */
-
+.picture {
+  background: #fff;
+  border: 2px solid #eee;
+  float: left;
+  margin: 0 1em 1em 0;
+  padding: 5px;
+}
 
 // -------------------------//
 // STICKY FOOTER
@@ -61,7 +67,7 @@
 
       a {
         background: rgba(255, 255, 255, .5);
-        border-radius: 4px;
+        border-radius: 1px;
         display: block;
         margin: 0;
         padding: .5em 1em;
@@ -91,7 +97,9 @@
 }
 
 .cell {
-  background: #999;
+  background: #ddd;
+  border: 2px solid #eee;
+  border-radius: 1px;
   float: left;
   height: 8em;
   margin: 1em 2%;
@@ -99,18 +107,53 @@
   width: 29.33333%;
 
   h4 {
-   background: rgba(255, 255, 255, .7);
-   margin: 0;
-   padding: .5em 1em;
-   position: absolute;
-   bottom: 0;
-   width: 100%;
+    background: rgba(255, 255, 255, .95);
+    margin: 0;
+    padding: 1em 1em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 
   &.featured {
-   height: 18em;
-   margin: 1em 2%;
-   width: 62.66667%;
+    height: 18em;
+    margin: 1em 2%;
+    width: 62.66667%;
+  }
+
+  &.howesound {
+    background: url('../images/sites/howesound.png') no-repeat;
+    background-size: cover;
+  }
+
+  &.htc {
+    background: url('../images/sites/htc.png') no-repeat;
+    background-size: cover;
+  }
+
+  &.bctransplant {
+    background: url('../images/sites/bctransplant.png') no-repeat;
+    background-size: cover;
+  }
+
+  &.salishsea {
+    background: url('../images/sites/salishsea.png') no-repeat;
+    background-size: cover;
+  }
+
+  &.tal {
+    background: url('../images/sites/tal.png') no-repeat;
+    background-size: cover;
+  }
+
+  &.noomii {
+    background: url('../images/sites/noomii.png') no-repeat;
+    background-size: cover;
+  }
+
+  &.aven {
+    background: url('../images/sites/aven.png') no-repeat;
+    background-size: cover;
   }
 }
 
