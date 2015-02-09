@@ -2,6 +2,146 @@
    Site styles
    ========================================================================== */
 
+
+// -------------------------//
+// STICKY FOOTER
+// ----------------------------------------------------------------------//
+#page {
+  min-height: 100%;
+  height: auto !important; 
+  height: 100%;
+  margin: 0 auto -216px;
+}
+
+#footer, .push {
+  height: 216px;
+}
+
+
+// -------------------------//
+// HEADER
+// ----------------------------------------------------------------------//
+#header {
+  background: url('../images/background.png') 50% 0 no-repeat;
+  background-size: cover;
+  padding: 0 0 4em;
+
+  .top-bar {
+    background: rgba(255, 255, 255, .6);
+    margin: 0 0 4em;
+    padding: 1em 0;
+    width: 100%;
+
+    .logo {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+      border-radius: 50%;
+      display: block;
+      float: left;
+      margin: 0 0 -72px;
+      height: auto;
+      width: 100px;
+    }
+  }
+}
+
+
+// Primary Menu
+// -------------------------
+.menu {
+  float: right; 
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li { 
+      float: left; 
+      margin: 0 0 0 20px;
+
+      a {
+        background: rgba(255, 255, 255, .5);
+        border-radius: 4px;
+        display: block;
+        margin: 0;
+        padding: .5em 1em;
+
+        &:hover {
+          background: #fff;
+          color: $orange;
+          transition: background .4s;
+        }
+      }
+    }
+  }
+}
+
+
+// -------------------------//
+// MAIN SECTION
+// ----------------------------------------------------------------------//
+#main {
+  padding: 2em 0 3em;
+}
+
+// Grid
+// -------------------------
+.showcase {
+   margin: 0 -2%; 
+}
+
+.cell {
+  background: #999;
+  float: left;
+  height: 8em;
+  margin: 1em 2%;
+  position: relative;
+  width: 29.33333%;
+
+  h4 {
+   background: rgba(255, 255, 255, .7);
+   margin: 0;
+   padding: .5em 1em;
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+  }
+
+  &.featured {
+   height: 18em;
+   margin: 1em 2%;
+   width: 62.66667%;
+  }
+}
+
+
+// -------------------------//
+// FOOTER SECTION
+// ----------------------------------------------------------------------//
+#footer {
+  background: url('../images/background.png') 50% 95% no-repeat;
+  background-size: cover;
+  padding: 8em 0 2em;
+
+  ul.social {
+    float: right;
+    list-style: none;
+
+    li {
+      float: left;
+      margin: 0 0 0 1em;
+
+      a {
+        color: rgba(255, 255, 255, .7);
+        
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
 /* ==========================================================================
    Media Queries
 

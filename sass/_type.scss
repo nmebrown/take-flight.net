@@ -1,14 +1,30 @@
+// -------------------------//
 // TYPOGRAPHY
+// ----------------------------------------------------------------------//
 
 // Headings
-h1, h2, h3, h4, h5, h6 { 
+// -------------------------
+h1, h2, h3, h4, h5, h6, { 
+  color: #333;
   font-family: 'Raleway', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1em; 
+  margin: .5em 0;
+  padding: 0;
 }
 
-h1 { font-size: 48px; }
-h2 { font-size: 36px; }
+h1 { 
+  border-bottom: 2px solid #eee;
+  color: $orange;
+  font-size: 48px; 
+  margin: 0 0 .5em;
+  padding: .5em 0;
+}
+h2 { 
+  color: $orange;
+  font-size: 36px; 
+
+}
 h3 { font-size: 30px; }
 h4 { font-size: 24px; }
 h5 { font-size: 21px; }
@@ -16,10 +32,12 @@ h6 { font-size: 18px; }
 
 small, .small { font-size: 12px; }
 
-// Copy
+
+// Body Copy
+// -------------------------
 body, div, li, p { 
   color: #333;
-  font-size: 16px; 
+  font-size: 18px; 
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 1.5em;
@@ -32,33 +50,52 @@ blockquote { font-size: 32px; }
 
 .intro { font-size: 32px; }
 
+
 // Links
+// -------------------------
 a {
   color: $orange;
+  text-decoration: none;
 }
 
-// Menu
+#main a {
+  border-bottom: 1px solid #eee;
+
+  &:hover { border-bottom: 1px solid #ccc; }
+}
+
+
+// Main Menu
+// -------------------------
 .menu {
   a { 
-    color: $orange;
+    color: $blue;
     font-weight: 600;
     text-decoration: none; 
     text-transform: uppercase;
   }
 }
 
-// Banner
-#banner h1 { 
+
+// Header
+// -------------------------
+#header h1 { 
+  border: 0;
+  color: $dkblue;
   text-align: center; 
-
-  span { color: $blue; }
 }
 
 
-span.underline {
-  text-decoration: underline;
-}
+// Footer
+// -------------------------
+.brand { 
+  color: #fff; 
+  float: left;
+  font-size: 30px; 
+  line-height: 38px;
+  text-transform: uppercase;
 
-span.border {
-  border-bottom: 2px solid #ccc;
+  span {
+    color: rgba(255, 255, 255, .6);
+  }
 }
