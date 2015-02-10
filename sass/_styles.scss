@@ -14,7 +14,7 @@
 
 .separator {
   border-bottom: 2px solid #fff;
-  margin: 1em 0 3em;
+  margin: 1em 0 2em;
 }
 
 .button {
@@ -49,7 +49,7 @@
 // HEADER
 // ----------------------------------------------------------------------//
 #header {
-  background: url('../images/background.jpg') 50% 10% no-repeat;
+  background: $blue url('../images/background.jpg') 50% 10% no-repeat;
   padding: 0 0 2em;
 
   .top-bar {
@@ -152,7 +152,7 @@
 // FOOTER SECTION
 // ----------------------------------------------------------------------//
 #footer {
-  background: url('../images/background.jpg') 50% 100% no-repeat;
+  background: #ccc url('../images/background.jpg') 50% 100% no-repeat;
   padding: 4em 1em 1em;
 
   .brand { float: right; }
@@ -309,12 +309,12 @@
   }
 
   #header {
-    background: url('../images/background.jpg') 50% 0 no-repeat;
+    background: $blue url('../images/background.jpg') 50% 0 no-repeat;
     background-size: cover;
   }
 
   #footer {
-    background: url('../images/background.jpg') 50% 95% no-repeat;
+    background: #ccc url('../images/background.jpg') 50% 95% no-repeat;
     background-size: cover;
   }
 

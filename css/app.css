@@ -2076,7 +2076,7 @@ a {
 
 .separator {
   border-bottom: 2px solid #fff;
-  margin: 1em 0 3em; }
+  margin: 1em 0 2em; }
 
 .button {
   background: #eee;
@@ -2101,7 +2101,7 @@ a {
   height: 100%; }
 
 #header {
-  background: url('../images/background.jpg') 50% 10% no-repeat;
+  background: #547079 url('../images/background.jpg') 50% 10% no-repeat;
   padding: 0 0 2em; }
   #header .top-bar {
     background: rgba(255, 255, 255, 0.6);
@@ -2179,7 +2179,7 @@ a {
     background-size: cover; }
 
 #footer {
-  background: url('../images/background.jpg') 50% 100% no-repeat;
+  background: #ccc url('../images/background.jpg') 50% 100% no-repeat;
   padding: 4em 1em 1em; }
   #footer .brand {
     float: right; }
@@ -2258,10 +2258,10 @@ a {
   #footer, .push {
     height: 216px; }
   #header {
-    background: url('../images/background.jpg') 50% 0 no-repeat;
+    background: #547079 url('../images/background.jpg') 50% 0 no-repeat;
     -webkit-background-size: cover;
     background-size: cover; }
   #footer {
-    background: url('../images/background.jpg') 50% 95% no-repeat;
+    background: #ccc url('../images/background.jpg') 50% 95% no-repeat;
     -webkit-background-size: cover;
     background-size: cover; } }
