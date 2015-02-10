@@ -49,6 +49,14 @@ body, div, li, p {
 p { margin: 0 0 1em; }
 blockquote { font-size: 32px; }
 
+.button {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
 
 // Links
 // -------------------------
@@ -57,11 +65,7 @@ a {
   text-decoration: none;
 }
 
-#main a {
-  border-bottom: 1px solid #eee;
-
-  &:hover { border-bottom: 1px solid #ccc; }
-}
+#main a:hover { border-bottom: 1px solid #eee; }
 
 
 // Main Menu
@@ -101,7 +105,13 @@ a {
   }
 
   a { 
-    h4 { color: $orange; }
+    h4 { 
+      color: $blue; 
+
+      &:hover {
+        color: $orange;
+      }
+    }
   }
 }
 
