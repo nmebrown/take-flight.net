@@ -2199,9 +2199,6 @@ a {
   .container {
     padding: 0 1em; }
   #header {
-    background: url('../images/background.jpg') 50% 0 no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
     padding: 0 0 4em; }
     #header .top-bar {
       margin: 0 0 4em;
@@ -2231,7 +2228,7 @@ a {
             -webkit-transition: background 0.5s;
             transition: background 0.5s; }
   #main {
-    padding: 2em 1em 3em; }
+    padding: 2em 1em; }
   .showcase {
     margin: 0 -2%; }
   .cell {
@@ -2243,9 +2240,6 @@ a {
       margin: 1em 2%;
       width: 62.66667%; }
   #footer {
-    background: url('../images/background.jpg') 50% 95% no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
     padding: 8em 0 2em; }
     #footer .brand {
       float: left; }
@@ -2262,4 +2256,12 @@ a {
     height: 100%;
     margin: 0 auto -216px; }
   #footer, .push {
-    height: 216px; } }
+    height: 216px; }
+  #header {
+    background: url('../images/background.jpg') 50% 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover; }
+  #footer {
+    background: url('../images/background.jpg') 50% 95% no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover; } }

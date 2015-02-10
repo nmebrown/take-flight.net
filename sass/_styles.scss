@@ -197,8 +197,6 @@
   // HEADER
   // ----------------------------------------------------------------------//
   #header {
-    background: url('../images/background.jpg') 50% 0 no-repeat;
-    background-size: cover;
     padding: 0 0 4em;
 
     .top-bar {
@@ -247,7 +245,7 @@
 
   // MAIN SECTION
   // ----------------------------------------------------------------------//
-  #main { padding: 2em 1em 3em; }
+  #main { padding: 2em 1em; }
 
   // Grid
   // -------------------------
@@ -270,8 +268,6 @@
   // FOOTER SECTION
   // ----------------------------------------------------------------------//
   #footer {
-    background: url('../images/background.jpg') 50% 95% no-repeat;
-    background-size: cover;
     padding: 8em 0 2em;
 
     .brand { float: left; }
@@ -310,6 +306,16 @@
 
   #footer, .push {
     height: 216px;
+  }
+
+  #header {
+    background: url('../images/background.jpg') 50% 0 no-repeat;
+    background-size: cover;
+  }
+
+  #footer {
+    background: url('../images/background.jpg') 50% 95% no-repeat;
+    background-size: cover;
   }
 
 }
