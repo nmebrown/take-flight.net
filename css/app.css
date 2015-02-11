@@ -2030,7 +2030,7 @@ a {
   text-decoration: none; }
 
 #main a:hover {
-  border-bottom: 1px solid #eee; }
+  border-bottom: 2px solid #eee; }
 
 .menu a {
   color: #547079;
@@ -2059,9 +2059,6 @@ a {
 
 .brand {
   color: #fff;
-  float: left;
-  font-size: 30px;
-  line-height: 38px;
   text-transform: uppercase; }
   .brand span {
     color: rgba(255, 255, 255, 0.6); }
@@ -2069,9 +2066,9 @@ a {
 .picture {
   background: #fff;
   border: 2px solid #eee;
-  float: left;
-  margin: 0 1em 1em 0;
-  padding: 5px; }
+  margin: 0 auto 1em;
+  padding: 5px;
+  width: 100%; }
 
 .separator {
   border-bottom: 2px solid #fff;
@@ -2145,7 +2142,7 @@ a {
   border: 2px solid #eee;
   border-radius: 1px;
   height: 8em;
-  margin: 1em 0;
+  margin: 0 0 1em;
   position: relative;
   width: 100; }
   .cell h4 {
@@ -2196,11 +2193,15 @@ a {
   background: #ccc url('../images/background.jpg') 50% 100% no-repeat;
   padding: 4em 1em 1em; }
   #footer .brand {
-    float: right; }
+    float: right;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+    width: 100%; }
   #footer ul.social {
     float: right;
     list-style: none;
-    margin: 0 0 0.5em; }
+    margin: 0 0 1em; }
     #footer ul.social li {
       float: left;
       margin: 0 0 0 1em; }
@@ -2212,6 +2213,10 @@ a {
 @media screen and (min-width: 32em) {
   .container {
     padding: 0 1em; }
+  .picture {
+    float: left;
+    margin: 0 1em 1em 0;
+    width: auto; }
   #header {
     padding: 0 0 4em; }
     #header .top-bar {
@@ -2230,8 +2235,6 @@ a {
       background: #fff;
       -webkit-transition: background 0.5s;
       transition: background 0.5s; }
-  .menu ul li:first-child {
-    display: block; }
   #main {
     padding: 2em 1em; }
   .showcase {
@@ -2247,7 +2250,11 @@ a {
   #footer {
     padding: 8em 0 2em; }
     #footer .brand {
-      float: left; }
+      float: left;
+      font-size: 30px;
+      line-height: 38px;
+      text-align: left;
+      width: auto; }
     #footer ul.social {
       float: right;
       margin: 0; } }
@@ -2269,6 +2276,8 @@ a {
     #header .intro {
       font-size: 48px;
       line-height: 1em; }
+  .menu ul li:first-child {
+    display: block; }
   #footer {
     background: #ccc url('../images/background.jpg') 50% 95% no-repeat;
     -webkit-background-size: cover;

@@ -65,7 +65,7 @@ a {
   text-decoration: none;
 }
 
-#main a:hover { border-bottom: 1px solid #eee; }
+#main a:hover { border-bottom: 2px solid #eee; }
 
 
 // Main Menu
@@ -119,9 +119,6 @@ a {
 // -------------------------
 .brand { 
   color: #fff; 
-  float: left;
-  font-size: 30px; 
-  line-height: 38px;
   text-transform: uppercase;
 
   span {
