@@ -50,22 +50,28 @@
 // ----------------------------------------------------------------------//
 #header {
   background: $blue url('../images/background.jpg') 50% 10% no-repeat;
-  padding: 0 0 2em;
+  padding: 0 0 3em;
 
   .top-bar {
     background: rgba(255, 255, 255, .6);
-    margin: 0 0 2em;
-    padding: 1em 0;
+    margin: 0 0 3em;
+    padding: 1em;
     width: 100%;
 
     .logo {
       box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
       border-radius: 50%;
       display: block;
-      margin: -.5em auto -2em;
+      float: left;
+      margin: -1em 0 -4em;
       height: auto;
       width: 100px;
     }
+  }
+
+  .intro { 
+    font-size: 30px; 
+    line-height: 1.2;
   }
 }
 
@@ -73,7 +79,24 @@
 // Primary Menu
 // -------------------------
 .menu {
-  display: none;
+  float: right;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li { 
+      float: left;
+      margin: 0 0 0 1em;
+
+      a {
+        &:hover { color: $orange; }
+      }
+
+      &:first-child { display: none; }
+    }
+  }
 }
 
 
@@ -214,18 +237,8 @@
   // Primary Menu
   // -------------------------
   .menu {
-    display: block;
-    float: right; 
-
     ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-
       li { 
-        float: left; 
-        margin: 0 0 0 20px;
-
         a {
           background: rgba(255, 255, 255, .5);
           border-radius: 1px;
@@ -235,13 +248,15 @@
 
           &:hover {
             background: #fff;
-            color: $orange;
             transition: background .5s;
           }
         }
+
+        &:first-child { display: block; }
       }
     }
   }
+
 
   // MAIN SECTION
   // ----------------------------------------------------------------------//
@@ -311,6 +326,11 @@
   #header {
     background: $blue url('../images/background.jpg') 50% 0 no-repeat;
     background-size: cover;
+
+    .intro { 
+      font-size: 48px; 
+      line-height: 1em;
+    }
   }
 
   #footer {
