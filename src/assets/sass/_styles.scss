@@ -1,0 +1,358 @@
+// ----------------------------------------------------------------------//
+// SITE STYLES
+// ----------------------------------------------------------------------//
+
+// BASE STYLES
+// ----------------------------------------------------------------------//
+.picture {
+  background: #fff;
+  border: 2px solid #eee;
+  margin: 0 auto 1em;
+  padding: 5px;
+  width: 100%;
+}
+
+.separator {
+  border-bottom: 2px solid #fff;
+  margin: 1em 0 2em;
+}
+
+.button {
+  background: #eee;
+  border: 0 !important;
+  border-radius: 1px;
+  color: #999;
+  display: block;
+  margin: 0;
+  padding: 0.4em 0.8em;
+
+  &:hover {
+    background: $orange;
+    border: 0 !important;
+    color: #fff;
+    transition: background 0.5s;
+  }
+
+  &.left {
+    margin: 0 1em 0 0;
+  }
+}
+
+// STICKY FOOTER
+// ----------------------------------------------------------------------//
+#page {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+
+// HEADER
+// ----------------------------------------------------------------------//
+#header {
+  background: $blue url('../images/background.jpg') 50% 10% no-repeat;
+  padding: 0 0 3em;
+
+  .top-bar {
+    background: rgba(255, 255, 255, 0.6);
+    margin: 0 0 3em;
+    padding: 1em;
+    width: 100%;
+
+    .logo {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+      border-radius: 50%;
+      display: block;
+      float: left;
+      margin: -1em 0 -4em;
+      height: auto;
+      width: 100px;
+    }
+  }
+
+  .intro {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+}
+
+// Primary Menu
+// -------------------------
+.menu {
+  float: right;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      float: left;
+      margin: 0 0 0 1em;
+
+      a {
+        &:hover {
+          color: $orange;
+        }
+      }
+
+      &:first-child {
+        display: none;
+      }
+    }
+  }
+}
+
+// MAIN SECTION
+// ----------------------------------------------------------------------//
+#main {
+  padding: 2em 1em;
+}
+
+// Grid
+// -------------------------
+.showcase {
+  margin: 0;
+}
+
+.cell {
+  background: #ddd;
+  border: 2px solid #eee;
+  border-radius: 1px;
+  height: 8em;
+  margin: 0 0 1em;
+  position: relative;
+  width: 100;
+
+  h4 {
+    background: rgba(238, 238, 238, 0.95);
+    margin: 0;
+    padding: 1em 1em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    &:hover {
+      background: #fff;
+
+      transition: background 0.5s;
+    }
+  }
+
+  // Sites (Alphabetical)
+  &.aven {
+    background: url('../images/sites/aven.png') no-repeat;
+    background-size: cover;
+  }
+  &.bctransplant {
+    background: url('../images/sites/bctransplant.png') no-repeat;
+    background-size: cover;
+  }
+  &.howesound {
+    background: url('../images/sites/howesound.png') no-repeat;
+    background-size: cover;
+  }
+  &.htc {
+    background: url('../images/sites/htc.png') no-repeat;
+    background-size: cover;
+  }
+  &.noomii {
+    background: url('../images/sites/noomii.png') no-repeat;
+    background-size: cover;
+  }
+  &.salishsea {
+    background: url('../images/sites/salishsea.png') no-repeat;
+    background-size: cover;
+  }
+  &.tal {
+    background: url('../images/sites/tal.png') no-repeat;
+    background-size: cover;
+  }
+  &.tf {
+    background: url('../images/sites/tf.png') no-repeat;
+    background-size: cover;
+  }
+}
+
+// FOOTER SECTION
+// ----------------------------------------------------------------------//
+#footer {
+  background: #ccc url('../images/background.jpg') 50% 100% no-repeat;
+  padding: 4em 1em 1em;
+
+  .brand {
+    float: right;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+    width: 100%;
+  }
+
+  ul.social {
+    float: right;
+    list-style: none;
+    margin: 0 0 1em;
+
+    li {
+      float: left;
+      margin: 0 0 0 1em;
+
+      a {
+        color: rgba(255, 255, 255, 0.7);
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+// ----------------------------------------------------------------------//
+// MEDIA QUERIES
+// - Medium and Up
+// - Medium
+// - Large
+// ----------------------------------------------------------------------//
+
+// -------------------------//
+// Medium and Up - Targets everything larger than mobile
+// ----------------------------------------------------------------------//
+@include break(medium-and-large) {
+  .container {
+    padding: 0 1em;
+  }
+
+  .picture {
+    float: left;
+    margin: 0 1em 1em 0;
+    width: auto;
+  }
+
+  // HEADER
+  // ----------------------------------------------------------------------//
+  #header {
+    padding: 0 0 4em;
+
+    .top-bar {
+      margin: 0 0 4em;
+      padding: 1em 0;
+
+      .logo {
+        float: left;
+        margin: 0 0 -72px;
+      }
+    }
+  }
+
+  // Primary Menu
+  // -------------------------
+  .menu {
+    ul {
+      li {
+        a {
+          background: rgba(255, 255, 255, 0.5);
+          border-radius: 1px;
+          display: block;
+          margin: 0;
+          padding: 0.5em 1em;
+
+          &:hover {
+            background: #fff;
+            transition: background 0.5s;
+          }
+        }
+      }
+    }
+  }
+
+  // MAIN SECTION
+  // ----------------------------------------------------------------------//
+  #main {
+    padding: 2em 1em;
+  }
+
+  // Grid
+  // -------------------------
+  .showcase {
+    margin: 0 -2%;
+  }
+
+  .cell {
+    float: left;
+    margin: 1em 2%;
+    width: 29.33333%;
+
+    &.featured {
+      height: 18em;
+      margin: 1em 2%;
+      width: 62.66667%;
+    }
+  }
+
+  // FOOTER SECTION
+  // ----------------------------------------------------------------------//
+  #footer {
+    padding: 8em 0 2em;
+
+    .brand {
+      float: left;
+      font-size: 30px;
+      line-height: 38px;
+      text-align: left;
+      width: auto;
+    }
+
+    ul.social {
+      float: right;
+      margin: 0;
+    }
+  }
+}
+
+// -------------------------//
+// Medium - only targets 1st breakpoint. Styles
+// ----------------------------------------------------------------------//
+@include break(medium) {
+}
+
+// -------------------------//
+// Large - only targets 2nd breakpoint.
+// ----------------------------------------------------------------------//
+@include break(large) {
+  // STICKY FOOTER
+  // ----------------------------------------------------------------------//
+  #page {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -216px;
+  }
+
+  #footer,
+  .push {
+    height: 216px;
+  }
+
+  #header {
+    background: $blue url('../images/background.jpg') 50% 0 no-repeat;
+    background-size: cover;
+
+    .intro {
+      font-size: 48px;
+      line-height: 1em;
+    }
+  }
+
+  .menu {
+    ul {
+      li:first-child {
+        display: block;
+      }
+    }
+  }
+
+  #footer {
+    background: #ccc url('../images/background.jpg') 50% 95% no-repeat;
+    background-size: cover;
+  }
+}
