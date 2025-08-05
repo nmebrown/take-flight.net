@@ -1,7 +1,7 @@
 <template>
   <section class="about">
     <h1>About Cole</h1>
-    <img src="/images/colebrown.png" class="picture" />
+    <img src="@/assets/images/colebrown.png" class="picture" />
     <p>
       Hello! My name is Cole Brown and this is my online portfolio. I'm a front-end developer from
       San Francisco, California, currently based in Vancouver, British Columbia.
