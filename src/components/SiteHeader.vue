@@ -22,11 +22,14 @@
 
 header {
   background: var(--brand-blue) url('@/assets/images/background.jpg') 50% 10% no-repeat;
+  background-size: cover;
   padding: 0 0 3em;
 }
 
 .nav {
   background: rgba(255, 255, 255, 0.6);
+  display: grid;
+  grid-template-columns: 1fr 100px auto 1fr;
   margin: 0 0 3em;
   padding: 1em;
   width: 100%;
@@ -41,67 +44,73 @@ header {
   width: 100px;
 }
 
-.intro {
-  font-size: 30px;
-  line-height: 1.2;
-}
-
 .menu {
+  grid-column: 3;
+  display: flex;
+  grid-gap: 20px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* existing */
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
+.menu a {
+  color: var(--brand-blue);
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
-nav a.router-link-exact-active {
+.menu a.router-link-exact-active {
   color: var(--color-text);
 }
 
-nav a.router-link-exact-active:hover {
+.menu a.router-link-exact-active:hover {
   background-color: transparent;
 }
 
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
+.intro {
   border: 0;
+  color: var(--brand-dkblue);
+  font-family: var(--brand-header-font);
+  font-size: 30px;
+  line-height: 1.2;
+  margin: 0;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
 }
 
 @media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+  #header {
+    padding: 0 0 4em;
+
+    .top-bar {
+      margin: 0 0 4em;
+      padding: 1em 0;
+
+      .logo {
+        float: left;
+        margin: 0 0 -72px;
+      }
+    }
   }
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+  .menu {
+    ul {
+      li {
+        a {
+          background: rgba(255, 255, 255, 0.5);
+          border-radius: 1px;
+          display: block;
+          margin: 0;
+          padding: 0.5em 1em;
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
+          &:hover {
+            background: #fff;
+            transition: background 0.5s;
+          }
+        }
+      }
+    }
   }
 }
 </style>

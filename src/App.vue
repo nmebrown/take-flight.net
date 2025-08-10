@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 import SiteHeader from './components/SiteHeader.vue'
 import SiteFooter from './components/SiteFooter.vue'
 </script>
@@ -7,7 +7,9 @@ import SiteFooter from './components/SiteFooter.vue'
 <template>
   <div class="site-layout">
     <SiteHeader />
-    <RouterView />
+    <main class="main">
+      <RouterView />
+    </main>
     <SiteFooter />
   </div>
 </template>

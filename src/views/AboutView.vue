@@ -35,6 +35,14 @@
 </template>
 
 <style>
+.picture {
+  background: #fff;
+  border: 2px solid #eee;
+  margin: 0 auto 1em;
+  padding: 5px;
+  width: 100%;
+}
+
 @media (min-width: 1024px) {
   .about {
     min-height: 100vh;

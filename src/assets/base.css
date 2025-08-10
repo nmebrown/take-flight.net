@@ -1,4 +1,8 @@
 :root {
+  /* custom variables */
+  --brand-base-font: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  --brand-header-font: 'Raleway', Verdana, sans-serif;
+
   --brand-orange: #ef7700;
   --brand-blue: #547079;
   --brand-dkblue: #3b484d;
