@@ -1,21 +1,31 @@
 @import './base.css';
 
-#app {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-  margin: 0 auto;
-  padding: 0;
-  font-weight: normal;
-}
-
-/* Body Copy */
 body {
+  min-height: 100vh;
   color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family: var(--brand-base-font, Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif
+  );
   font-size: 18px;
-  font-family: var(--brand-base-font);
   font-weight: 400;
-  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0;
 }
@@ -64,6 +74,7 @@ h6 {
   font-size: 18px;
 }
 
+/* Font styles */
 p {
   margin: 0 0 1em;
 }
@@ -77,6 +88,7 @@ small,
   font-size: 12px;
 }
 
+/* Link styles */
 a {
   border-bottom: 2px solid transparent;
   text-decoration: none;
@@ -114,6 +126,7 @@ a {
   }
 }
 
+/* Layout styles */
 .site-layout {
   display: flex;
   flex-flow: column nowrap;

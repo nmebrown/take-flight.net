@@ -1,17 +1,17 @@
 <template>
   <section class="home">
     <div class="showcase">
-      <div class="cell featured howesound">
+      <div class="card featured howesound">
         <a href="http://www.sustainablehowesound.ca" target="_blank">
           <h4>Save the Howe Sound</h4>
         </a>
       </div>
-      <div class="cell htc">
+      <div class="card htc">
         <a href="http://www.houstontrust.com" target="_blank">
           <h4>Houston Trust Company</h4>
         </a>
       </div>
-      <div class="cell salishsea">
+      <div class="card salishsea">
         <a href="http://www.salishseaaction.org" target="_blank">
           <h4>Save the Salish Sea</h4>
         </a>

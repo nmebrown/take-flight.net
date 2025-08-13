@@ -13,7 +13,9 @@
       </ul>
     </nav>
 
-    <div class="intro">My name is Cole Brown<br />and I <span>design & code</span> websites!</div>
+    <div class="intro">
+      My name is Cole Brown<br />and I <span>design & code</span> websites!
+    </div>
   </header>
 </template>
 
@@ -64,10 +66,6 @@ header {
   color: var(--color-text);
 }
 
-.menu a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
 .intro {
   border: 0;
   color: var(--brand-dkblue);
@@ -80,37 +78,31 @@ header {
 }
 
 @media (min-width: 1024px) {
-  #header {
+  header {
     padding: 0 0 4em;
+  }
 
-    .top-bar {
-      margin: 0 0 4em;
-      padding: 1em 0;
+  .nav {
+    margin: 0 0 4em;
+    padding: 1em 0;
+  }
 
-      .logo {
-        float: left;
-        margin: 0 0 -72px;
-      }
+  .menu a {
+    background: rgba(255, 255, 255, 0.5);
+    border: 0;
+    display: block;
+    margin: 0;
+    padding: 0.5em 1em;
+    transition: all ease 0.2s;
+
+    &:hover {
+      background: #fff;
+      border: 0;
     }
   }
 
-  .menu {
-    ul {
-      li {
-        a {
-          background: rgba(255, 255, 255, 0.5);
-          border-radius: 1px;
-          display: block;
-          margin: 0;
-          padding: 0.5em 1em;
-
-          &:hover {
-            background: #fff;
-            transition: background 0.5s;
-          }
-        }
-      }
-    }
+  .intro {
+    font-size: 42px;
   }
 }
 </style>
