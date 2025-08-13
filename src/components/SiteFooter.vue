@@ -12,6 +12,7 @@ footer {
   background: #ccc url('@/assets/images/background.jpg') 50% 100% no-repeat;
   background-size: cover;
   padding: 4em 1em 1em;
+  margin-top: auto;
 }
 
 .brand {

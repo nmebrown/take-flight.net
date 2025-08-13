@@ -17,11 +17,12 @@
         </a>
       </div>
     </div>
-    <p class="clear"><a href="work.html" class="button right">...</a></p>
-
-    <div class="separator"></div>
+    <p>
+      <RouterLink to="/work" class="button">See my full portfolio</RouterLink>
+    </p>
 
     <h2>About</h2>
+    <div class="separator"></div>
     <p>
       I have over 15 years of web design experience and am always looking for new opportunities to
       expand my skills. I specialize in creating custom Drupal and Wordpress themes for non-profit
@@ -33,17 +34,16 @@
       <a href="http://www.raisedeyebrow.com" target="_blank">Raised Eyebrow Web Studio</a>, a local
       Vancouver development house.
     </p>
-
-    <p class="clear"><a href="about.html" class="button right">...</a></p>
+    <p>
+      <RouterLink to="/about" class="button">Read more about me</RouterLink>
+    </p>
   </section>
 </template>
 
 <style>
 @media (min-width: 1024px) {
   .home {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+
   }
 }
 </style>

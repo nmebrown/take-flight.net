@@ -78,15 +78,16 @@ small,
 }
 
 a {
+  border-bottom: 2px solid transparent;
   text-decoration: none;
   color: var(--brand-orange);
   transition: 0.2s;
-  padding: 3px;
+  padding: 2px 0;
 }
 
 @media (hover: hover) {
   a:hover {
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid var(--color-text);
   }
 }
 
@@ -96,17 +97,20 @@ a {
   font-weight: 600;
   line-height: 1em;
   text-transform: uppercase;
-}
+  width: auto;
 
-/* OLD */
-// BASE STYLES
-// ----------------------------------------------------------------------//
-.picture {
-  background: #fff;
-  border: 2px solid #eee;
-  margin: 0 auto 1em;
-  padding: 5px;
-  width: 100%;
+  background: #eee;
+  border: 0;
+  border-radius: 1px;
+  color: #999;
+  margin: 0;
+  padding: 0.4em 0.8em;
+  transition: all ease 0.2s;
+
+  &:hover {
+    background: var(--brand-orange);
+    color: #fff;
+  }
 }
 
 .separator {
@@ -114,102 +118,13 @@ a {
   margin: 1em 0 2em;
 }
 
-.button {
-  background: #eee;
-  border: 0 !important;
-  border-radius: 1px;
-  color: #999;
-  display: block;
-  margin: 0;
-  padding: 0.4em 0.8em;
-
-  &:hover {
-    background: $orange;
-    border: 0 !important;
-    color: #fff;
-    transition: background 0.5s;
-  }
-
-  &.left {
-    margin: 0 1em 0 0;
-  }
-}
-
-// STICKY FOOTER
-// ----------------------------------------------------------------------//
-#page {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-}
-
-// HEADER
-// ----------------------------------------------------------------------//
-#header {
-  background: $blue url('../images/background.jpg') 50% 10% no-repeat;
-  padding: 0 0 3em;
-
-  .top-bar {
-    background: rgba(255, 255, 255, 0.6);
-    margin: 0 0 3em;
-    padding: 1em;
-    width: 100%;
-
-    .logo {
-      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-      border-radius: 50%;
-      display: block;
-      float: left;
-      margin: -1em 0 -4em;
-      height: auto;
-      width: 100px;
-    }
-  }
-
-  .intro {
-    font-size: 30px;
-    line-height: 1.2;
-  }
-}
-
-// Primary Menu
-// -------------------------
-.menu {
-  float: right;
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    li {
-      float: left;
-      margin: 0 0 0 1em;
-
-      a {
-        &:hover {
-          color: $orange;
-        }
-      }
-
-      &:first-child {
-        display: none;
-      }
-    }
-  }
+.site-layout {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
 }
 
 @media (min-width: 1024px) {
-  .container {
-    padding: 0 1em;
-  }
-
-  .picture {
-    float: left;
-    margin: 0 1em 1em 0;
-    width: auto;
-  }
-
   .main {
     padding: 2em 1em;
   }
