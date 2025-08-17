@@ -1,5 +1,5 @@
 <template>
-  <section class="work">
+  <section class="work container">
     <h1>Past Projects</h1>
 
     <div class="showcase">

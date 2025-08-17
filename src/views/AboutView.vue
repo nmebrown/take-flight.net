@@ -1,5 +1,5 @@
 <template>
-  <section class="about">
+  <section class="about container">
     <h1>About Cole</h1>
     <img src="@/assets/images/colebrown.png" class="picture" />
     <p>

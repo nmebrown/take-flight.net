@@ -1,5 +1,5 @@
 <template>
-  <section class="contact">
+  <section class="contact container">
     <h1>Contact Me</h1>
     <p>
       Looking for an experienced front-end developer to join your team on a full-time or contract

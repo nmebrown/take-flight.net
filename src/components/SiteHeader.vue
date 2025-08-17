@@ -1,19 +1,21 @@
 <template>
   <header class="header">
-    <nav class="nav">
-      <a href="/">
-        <img src="@/assets/images/logo.png" class="logo" />
-      </a>
+    <div class="top-bar">
+      <nav class="nav container">
+        <a href="/" class="home-link">
+          <img src="@/assets/images/logo.png" class="logo" />
+        </a>
 
-      <ul class="menu">
-        <li><RouterLink to="/">Home</RouterLink></li>
-        <li><RouterLink to="/about">About</RouterLink></li>
-        <li><RouterLink to="/work">Work</RouterLink></li>
-        <li><RouterLink to="/contact">Contact</RouterLink></li>
-      </ul>
-    </nav>
+        <ul class="main-menu">
+          <li><RouterLink to="/">Home</RouterLink></li>
+          <li><RouterLink to="/about">About</RouterLink></li>
+          <li><RouterLink to="/work">Work</RouterLink></li>
+          <li><RouterLink to="/contact">Contact</RouterLink></li>
+        </ul>
+      </nav>
+    </div>
 
-    <div class="intro">
+    <div class="container intro">
       My name is Cole Brown<br />and I <span>design & code</span> websites!
     </div>
   </header>
@@ -28,13 +30,17 @@ header {
   padding: 0 0 3em;
 }
 
-.nav {
+.top-bar {
   background: rgba(255, 255, 255, 0.6);
-  display: grid;
-  grid-template-columns: 1fr 100px auto 1fr;
   margin: 0 0 3em;
   padding: 1em;
   width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .logo {
@@ -46,23 +52,35 @@ header {
   width: 100px;
 }
 
-.menu {
-  grid-column: 3;
+.main-menu {
   display: flex;
   grid-gap: 20px;
   list-style: none;
   margin: 0;
+  margin-left: auto;
   padding: 0;
 }
 
-.menu a {
+.main-menu a {
   color: var(--brand-blue);
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
+
+  background: rgba(255, 255, 255, 0.5);
+  border: 0;
+  display: block;
+  margin: 0;
+  padding: 0.5em 1em;
+  transition: all ease 0.2s;
 }
 
-.menu a.router-link-exact-active {
+.main-menu a:hover {
+  background: #fff;
+  border: 0;
+}
+
+.main-menu a.router-link-exact-active {
   color: var(--color-text);
 }
 
@@ -82,23 +100,8 @@ header {
     padding: 0 0 4em;
   }
 
-  .nav {
+  .top-bar {
     margin: 0 0 4em;
-    padding: 1em 0;
-  }
-
-  .menu a {
-    background: rgba(255, 255, 255, 0.5);
-    border: 0;
-    display: block;
-    margin: 0;
-    padding: 0.5em 1em;
-    transition: all ease 0.2s;
-
-    &:hover {
-      background: #fff;
-      border: 0;
-    }
   }
 
   .intro {

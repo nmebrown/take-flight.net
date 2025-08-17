@@ -1,5 +1,5 @@
 <template>
-  <section class="home">
+  <section class="home container">
     <div class="showcase">
       <div class="card featured howesound">
         <a href="http://www.sustainablehowesound.ca" target="_blank">

@@ -133,6 +133,13 @@ a {
   min-height: 100vh;
 }
 
+.container {
+  justify-self: center;
+  max-width: 1200px;
+  padding: 0 1em;
+  width: 100%;
+}
+
 .separator {
   border-bottom: 2px solid #fff;
   margin: 1em 0 2em;
