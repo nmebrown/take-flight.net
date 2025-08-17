@@ -51,31 +51,39 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   margin: 0;
+  margin-bottom: 1em;
 }
 
 .card {
+  aspect-ratio: 16 / 9;
   background: #ddd;
   border: 2px solid #eee;
   border-radius: 1px;
-  height: 8em;
+  cursor: pointer;
   margin: 0;
   position: relative;
   width: 100%;
 
   h4 {
     background: rgba(238, 238, 238, 0.95);
+    color: var(--brand-dkblue);
+    font-weight: bold;
     margin: 0;
-    padding: 1em 1em;
+    padding: .8em 1em;
     position: absolute;
     bottom: 0;
     width: 100%;
     transition: background 0.5s;
-
-    &:hover {
-      background: #fff;
-    }
   }
 
+  &:hover h4 {
+    background: #fff;
+  }
+
+  &.featured {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
   &.aven {
     background: url('@/assets/images/sites/aven.png') no-repeat;
     background-size: cover;
